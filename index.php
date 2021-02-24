@@ -6,6 +6,6 @@
 </head>
 
 <body>
-    <p><a href="https://paginas.fe.up.pt/~up201704897/SIEM/T2_SIEM/main.php?page=home">Site link</a></p>
+    <p><a href="">Site link</a></p>
 </body>
 </html>
