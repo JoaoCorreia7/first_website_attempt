@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    
+}
+
+ul {
+    float: right;
+    margin-right: 50px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Calibri';
+    color: black;
+    padding: 0 30px;
+    display: block;
+}
+
+body{
+    min-width: 1500px;   
+    width: auto !important;  
+    width: 1500px;     
+}
+
+footer{
+    line-height: 25px;
+    font-size: 16px;
+    font-family: 'Calibri';
+    padding-left: 10px;
+    color: white;
+    background-color: grey;
+}
+
+#logo_image {
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+#logo_text {
+    clear: none;
+    display: inline-block;
+    line-height: 100px;
+    vertical-align: top;
+    font-size: 44px;
+    font-family: 'Bernard MT Condensed';
+    padding-left: 10px;
+}
+
+#selected_page {
+    background: linear-gradient(180deg, lightgrey 95%, grey 5%);
+}
+
+.zoom {
+    transition: transform .3s; 
+}
+  
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.color_change {
+    width: 100%; 
+    filter: grayscale(100%);
+    transition: filter 1s;
+}
+
+.color_change:hover {
+    filter: grayscale(0%);
+    transition: filter 2s;
+}
+
+#products_container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 33.33%;
+}
+
+.product_column {
+    flex: 0 1 33.33%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.product_image {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+.price {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 30px;
+    font-family: 'Calibri';
+    color: black;
+}
+
+.blackline {
+    height: 7px;
+    background-color: black;
+}
+
+.greenline {
+    height: 7px;
+    background-color: darkgreen;
+}
+
+.product_description_container {
+    display: flex;
+    margin: 125px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_description_left_images {
+    width: 50%;
+    float: left;
+}
+.product_description_right_images {
+    width: 50%;
+    float: right;
+}
+
+.product_description_text {
+    flex: 50%;
+    margin-left: 75px;
+    font-size: 30px;
+    font-family: 'Calibri';
+    text-align: justify;
+}
+
+.description_edit_input{
+    width: 96%;
+    height: 450px;
+    outline: none;
+    resize: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-family: 'Calibri';
+    text-align: justify;
+}
+
+.price_edit_input{
+    width: 15%;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Calibri';
+    border-radius: 5px;
+    outline: none;
+    border-width: 1px;
+    margin-bottom: 25px;
+}
+
+.save_changes_button {
+    background: none;
+    border: none;
+    text-decoration-line: underline;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Calibri';
+}
+
+#quantity{
+    width: 10%;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Calibri';
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#add_to_cart {
+    width: 30%;
+}
+
+.shipping_contacts_header {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Calibri';
+    color: darkgreen;
+}
+
+.fifty_percent_column {
+    flex: 50%;    
+}
+
+.dark_grey_text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Calibri';
+    color: #4b4a4a;
+}
+
+.grey_text_shipping {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Calibri';
+    color: #6d6b6b;
+}
+
+.grey_text_contacts {
+    font-size: 18px;
+    font-family: 'Calibri';
+    color: #6d6b6b;
+}
+
+.shipping_contacts_main_text {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.green_link{
+    color: darkgreen;
+    text-decoration: underline;
+}
+.green_link:visited { color:darkgreen }
+.green_link:hover { color:darkgreen }
+.green_link:focus { color:darkgreen }
+.green_link:active { color:darkgreen }
+
+#login_center_logo {
+    width: 33.33%;
+    justify-content: center;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.login_form {
+    text-align: center;
+}
+
+.login_big_text {
+    display: block;
+    padding-bottom: 1%;
+    font-size: 30px;
+    font-family: 'Calibri';
+    color: black;
+}
+
+.login_input {
+    width: 50%;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Calibri';
+    border-radius: 7px;
+}
+
+.login_input_error{
+    width: 50%;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Calibri';
+    border-radius: 7px;
+    border-color: red;
+}
+
+.login_button {
+    background: none;
+    border: none;
+    text-decoration-line: underline;
+    font-size: 16px;
+    font-family: 'Calibri';
+    color: black;
+    float: right;
+    margin-right: 24%;
+    outline: none;
+    cursor: pointer;
+}
+
+.login_small_text {
+    font-size: 16px;
+    font-family: 'Calibri';
+    color: black;
+    text-align: right;
+    margin-right: 24%;
+}
+
+.login_error_text {
+    font-size: 16px;
+    font-family: 'Calibri';
+    text-align: right;
+    margin-right: 24%;
+    color: red;
+    margin-top: 1%;
+}
+
+.account_main_container{
+    min-height: calc(100vh - 100px - 7px - 25px); /* fills the remaining height after the 100px from the menu + 7px from the green line + 25px from footer */
+    height: auto;
+	display: flex;
+}
+
+.account_side_panel{
+    flex: 10%;
+    background-color: rgb(60, 179, 60);
+}
+
+.account_middle_container{
+    flex: 100%;
+    display: flex;
+    padding: 50px;
+    max-width: 1750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account_grey_box{
+    flex: 100%;
+    border: 1px solid black;
+    background-color: lightgrey;
+    height: 100%;
+    padding: 15px;
+}
+
+.account_middle_column{
+    flex: 5%;
+}
+
+.account_form{
+    display: flex;
+    flex-wrap: wrap; /* forces into new line */
+}
+
+.account_headers{
+    font-size: 25px;
+    font-family: 'Calibri';
+    color: darkgreen;
+    padding-bottom: 15px;
+}
+
+.account_input{
+    flex: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Calibri';
+    border-radius: 5px;
+    outline: none;
+    border-width: 1px;
+}
+
+.account_text{
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: 'Calibri';
+    display: inline-block;
+}
+
+.account_small_text{
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: 'Calibri';
+    display: block;
+    padding-bottom: 5px;
+}
+
+.account_previous_orders_header{
+    color: rgb(0, 134, 0);
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+    font-family: 'Calibri';
+}
+
+.account_save_changes_button {
+    background: none;
+    border: none;
+    text-decoration-line: underline;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Calibri';
+    margin-left: auto;
+    float: right;
+    padding-right: 30px;
+}
+
+.account_quantity{
+    width: 8%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Calibri';
+    border-radius: 7px;
+}
+
+.account_blackline{
+    height: 1px;
+    background-color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.checkout_button{
+    font-size: 25px;
+    font-family: 'Calibri';
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Calibri';
+    color: white;
+    background-color: rgb(60, 179, 60);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+td{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Calibri';
+}
+
+td.filter_cell{
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.filter_input{
+    font-style: italic;
+    font-size: 16px;
+    font-family: 'Calibri';
+    color: grey;
+    outline: none;
+    border: none;
+}
+
+.filter_input::placeholder{
+    font-style: italic;
+    color: grey;
+}
+
+tr:nth-child(even){
+    background-color: rgb(235, 235, 235);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(202, 201, 201);
+}
+
+tr:hover{
+    background-color:rgb(197, 255, 189);
+}
+
+#table_end{
+    border-bottom: 3px solid black;
+    height: 1px;
+}
+
+.admin_text{
+    font-size: 18px;
+    font-family: 'Calibri';
+    display: inline;
+    color: black;
+}
+
+.admin_quantity{
+    font-size: 16px;
+    font-family: 'Calibri';
+    width: 50px;
+    padding: 1px 5px;
+    margin-left: 5px;
+}
+
+.admin_date_submit{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    width: 100px;
+    padding: 2px 5px;
+    font-size: 16px;
+    font-family: 'Calibri';
+    text-align: center;
+    outline: none;
+    border-width: 1px;
+}
+
+.admin_date_submit::placeholder{
+    color: grey;
+}
+
+.admin_orders_button{
+    background: none;
+    border: none;
+    text-decoration-line: underline;
+    outline: none;
+    cursor: pointer;
+}
+
+.order_details_button{
+    background: none;
+    border: none;
+    text-decoration-line: underline;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Calibri';
+    color: black;
+}
+
+td a{
+    color: black;
+}
+a:visited { color:black }
+a:hover { color:black }
+a:focus { color:black }
+a:active { color:black }
